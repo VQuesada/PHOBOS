@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    /* font family */
+    font-family: "Averta CY", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/*Responsive layout*/
+
+@media screen and (max-width:700px) {
