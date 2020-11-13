@@ -17,7 +17,114 @@ body {
     clear: both;
 }
 
+/*Style body*/
+body{
+    background-color: rgb(44, 44, 48);
+}
+/* Style the header */
 
+.header {
+    background-image: url('../img/header.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 5% 2%;
+    text-align: center;
+}
+
+.header h1 {
+    font-size:3vw;
+    color:white;
+}
+
+.header h2 {
+    font-size: 3vw;
+    color:white;
+}
+
+/*Styles one-column*/
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 0% 13%;
+}
+ .one-column h1{
+     font-size: 3.5vw;
+ }
+
+ .one-column h2{
+    font-size: 2.5vw;
+}
+
+.one-column h3{
+    color: white;
+}
+
+.one-column p{
+    color: white;
+}
+.one-column h1,
+.one-column h2{
+    text-align: center;
+}
+
+.marco{
+    background-image: url('../img/marco.png');
+    background-size: 185%;
+    background-position: center;
+    color: white;
+}
+/*style the two-columns*/
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding: 5% 10%;
+}
+
+.two-column img {
+    padding: 5% 10%;
+    width: 100%;
+}
+
+.two-column h2{
+    color: white;
+}
+
+.two-column p{
+    color: white;
+}
+
+/*Styles four-columns*/
+
+.four-column {
+    float: left;
+    width: 25%;
+    padding: 2%;
+    text-align: center;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+/*Styles independant classes*/
+
+.nopadding {
+    padding: 0%;
+}
+
+.nouppadding{
+    padding-top: 0%;
+}
+
+ /*.grayfondo{
+     background-color: rgba(36, 0, 243, 0.438);
+ }*/
+
+ .textleft{
+     text-align: left;
+ }
 /*Responsive layout*/
 
 @media screen and (max-width:700px) {
