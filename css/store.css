@@ -166,12 +166,12 @@ body {
 /*------------------*/
 
 
-/* .container {
-    background-image: url('../img/header_patron.jpg');
+.container {
+    /*background-image: url('../img/header_patron.jpg');
     background-attachment: fixed;
-    background-position: left;
-    padding: 7%;
-}*/
+    background-position: left;*/
+    padding: 3% 0%;
+}
 
 .carousel {
     min-height: 100%;
