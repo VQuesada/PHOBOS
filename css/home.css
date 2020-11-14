@@ -4,23 +4,26 @@
     font-family: Tahoma, Geneva, sans-serif;
 }
 
-
-}
 body {
     margin: 0%;
 }
 
+
 /* Clear floats after the columns */
+
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
 
+
 /*BARRA NAV*/
+
 html {
     scroll-behavior: smooth;
 }
+
 ul {
     z-index: 10;
     list-style-type: none;
@@ -34,12 +37,14 @@ ul {
     display: inline-block;
     list-style-type: none;
 }
+
 li {
     float: left;
     width: 25%;
     display: inline-block;
     list-style-type: none;
 }
+
 li a {
     position: relative;
     display: block;
@@ -54,16 +59,19 @@ li a {
     overflow: hidden;
     transition: 0.2s;
 }
+
 li a:hover {
     color: rgb(199, 198, 198);
     background: #051e33;
     box-shadow: 0 0 10px #051e33, 0 0 40px #051e33, 0 0 80px;
     transition delay: 1s;
 }
+
 a span {
     position: absolute;
     display: block;
 }
+
 a span:nth-child(1) {
     top: 0;
     left: -100%;
@@ -71,10 +79,12 @@ a span:nth-child(1) {
     height: 2px;
     background: linear-gradient(90deg, transparent, #2196f3);
 }
+
 a:hover span:nth-child(1) {
     left: 100%;
     transition: 1s;
 }
+
 a span:nth-child(2) {
     top: -100%;
     right: 0;
@@ -82,11 +92,13 @@ a span:nth-child(2) {
     height: 100%;
     background: linear-gradient(180deg, transparent, #2196f3);
 }
+
 a:hover span:nth-child(2) {
     top: 100%;
     transition: 1s;
     transition-delay: 0.25s;
 }
+
 a span:nth-child(3) {
     bottom: 0;
     right: -100%;
@@ -94,11 +106,13 @@ a span:nth-child(3) {
     height: 2px;
     background: linear-gradient(270deg, transparent, #2196f3);
 }
+
 a:hover span:nth-child(3) {
     right: 100%;
     transition: 1s;
     transition-delay: 0.5s;
 }
+
 a span:nth-child(4) {
     bottom: -100%;
     left: 0;
@@ -106,16 +120,20 @@ a span:nth-child(4) {
     height: 100%;
     background: linear-gradient(360deg, transparent, #2196f3);
 }
+
 a:hover span:nth-child(4) {
     bottom: 100%;
     transition: 1s;
     transition-delay: 0.75s;
 }
 
+
 /*FI BARRRA NAV*/
+
 body {
     background-color: #031321;
 }
+
 .header {
     background- background-size: cover;
     background-attachment: fixed;
@@ -124,4 +142,36 @@ body {
     padding: 5% 2%;
     color: white;
     text-align: center;
+}
+
+#myVideo {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.viewport-header {
+    position: relative;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*
+h1 {
+    font-family: 'Syncopate', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3vw;
+    line-height: 1.2;
+    font-size: 3vw;
+    text-align: center;*/
+
+
 }
