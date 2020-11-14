@@ -1,12 +1,15 @@
 * {
     box-sizing: border-box;
-    /* font family */
+    /* font */
     font-family: Tahoma, Geneva, sans-serif;
 }
 
 body {
-    margin: 0;
+    margin: 0%;
 }
+
+
+/* Clear floats after the columns */
 
 .row:after {
     content: "";
@@ -22,6 +25,7 @@ html {
 }
 
 ul {
+    z-index: 10;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -125,3 +129,49 @@ a:hover span:nth-child(4) {
 
 
 /*FI BARRRA NAV*/
+
+body {
+    background-color: #031321;
+}
+
+.header {
+    background- background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+    background: rgba(0, 0, 0, 0.0);
+    padding: 5% 2%;
+    color: white;
+    text-align: center;
+}
+
+#myVideo {
+    z-index: -1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.viewport-header {
+    position: relative;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*
+h1 {
+    font-family: 'Syncopate', sans-serif;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 3vw;
+    line-height: 1.2;
+    font-size: 3vw;
+    text-align: center;*/
+
+
+}
