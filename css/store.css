@@ -25,6 +25,7 @@ html {
 }
 
 ul {
+    z-index: 10;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -194,11 +195,11 @@ body {
     object-fit: cover;
     position: absolute;
     top: 0;
-    left:0;
+    left: 0;
     z-index: -1;
 }
 
-.carousel .indicators .indicator-item{
+.carousel .indicators .indicator-item {
     border-radius: 0;
     transform: rotate(45deg);
     margin: 0 15px;
