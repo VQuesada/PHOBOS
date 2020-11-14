@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     /* font family */
-    font-family: "Averta CY", sans-serif;
+    font-family: "Geneva";
 }
 
 body {
@@ -73,6 +73,11 @@ body{
     background-size: 185%;
     background-position: center;
     color: white;
+}
+
+.one-column h1,
+.one-column h2{
+    color: rgb(6, 82, 247);
 }
 /*style the two-columns*/
 
