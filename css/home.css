@@ -46,13 +46,17 @@ li {
     list-style-type: none;
 }
 
-li a img{
-    width: 25%;
+.logo{
+    display: inline-block;
+    vertical-align: middle;
 }
 
-li a img{
-    padding: 0;
+li .logo img{
+    display: block;
+    width: 13%;
+    height: auto;
 }
+
 
 li a {
     position: relative;

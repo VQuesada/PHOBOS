@@ -3,6 +3,7 @@ window.addEventListener('load', function(){
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		draggable: true,
+		rewind: true,
 		dots: '.carousel__indicadores',
 		arrows: {
 			prev: '.carousel__anterior',
@@ -17,6 +18,7 @@ window.addEventListener('load', function(){
 				slidesToShow: 2,
 				slidesToScroll: 1,
 				draggable: false,
+				rewind: true,
 				itemWidth: 150,
 				duration: 0.25
 			  }
@@ -27,6 +29,8 @@ window.addEventListener('load', function(){
 				slidesToShow: 3,
 				slidesToScroll: 1,
 				draggable: false,
+				rewind: true,
+				scrollPropagate: true,
 				itemWidth: 150,
 				duration: 0.25
 			  }
