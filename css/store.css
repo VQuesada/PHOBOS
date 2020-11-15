@@ -18,120 +18,6 @@ body {
 }
 
 
-/*BARRA NAV*/
-
-html {
-    scroll-behavior: smooth;
-}
-
-ul {
-    z-index: 10;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: 0.4s;
-    display: inline-block;
-    list-style-type: none;
-}
-
-li {
-    float: left;
-    width: 20%;
-    display: inline-block;
-    list-style-type: none;
-}
-
-li img{
-    width: 25%;
-}
-
-li a {
-    position: relative;
-    display: block;
-    padding: 1.75vh 2vh;
-    color: #2196f3;
-    background-color: #031321;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 1vh;
-    text-decoration: none;
-    font-size: 1.25vw;
-    overflow: hidden;
-    transition: 0.2s;
-}
-
-li a:hover {
-    color: rgb(199, 198, 198);
-    background: #051e33;
-    box-shadow: 0 0 10px #051e33, 0 0 40px #051e33, 0 0 80px;
-    transition delay: 1s;
-}
-
-a span {
-    position: absolute;
-    display: block;
-}
-
-a span:nth-child(1) {
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #2196f3);
-}
-
-a:hover span:nth-child(1) {
-    left: 100%;
-    transition: 1s;
-}
-
-a span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #2196f3);
-}
-
-a:hover span:nth-child(2) {
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-}
-
-a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #2196f3);
-}
-
-a:hover span:nth-child(3) {
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
-
-a span:nth-child(4) {
-    bottom: -100%;
-    left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #2196f3);
-}
-
-a:hover span:nth-child(4) {
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
-}
-
-
 /*Style body*/
 
 body {
@@ -170,28 +56,29 @@ body {
 
 /*------------------*/
 
-.contenedor{
+.contenedor {
     padding-left: 5%;
     padding-right: 5%;
 }
+
 .carousel__contenedor {
-	position: relative;
+    position: relative;
 }
 
 .carousel__anterior,
 .carousel__siguiente {
-	position: absolute;
-	display: block;
-	width: 30px;
-	height: 30px;
-	border: none;
-	top: calc(50% - 35px);
-	cursor: pointer;
-	line-height: 30px;
-	text-align: center;
-	background: none;
-	color: #2196f3;
-	opacity: 20%;
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: none;
+    top: calc(50% - 35px);
+    cursor: pointer;
+    line-height: 30px;
+    text-align: center;
+    background: none;
+    color: #2196f3;
+    opacity: 20%;
 }
 
 .carousel__anterior:hover,
@@ -200,25 +87,24 @@ body {
     color: #2196f3;
 }
 
-.carousel__anterior{
+.carousel__anterior {
     left: -30px;
 }
 
-.carousel__siguiente{
+.carousel__siguiente {
     right: -30px;
 }
 
-.carousel__lista{
+.carousel__lista {
     overflow: hidden;
     color: white;
 }
 
-<<<<<<< HEAD
-.carousel__elemento{
+<<<<<<< HEAD .carousel__elemento {
     text-align: center;
 }
 
-.carousel__indicadores .glider-dot{
+.carousel__indicadores .glider-dot {
     display: block;
     width: 30px;
     height: 4px;
@@ -227,11 +113,11 @@ body {
     border-radius: 0;
 }
 
-.carousel__indicadores .glider-dot:hover{
+.carousel__indicadores .glider-dot:hover {
     opacity: .5;
 }
 
-.carousel__indicadores .glider-dot.active{
+.carousel__indicadores .glider-dot.active {
     opacity: 1;
 }
 
@@ -413,13 +299,13 @@ body {
     .marco {
         background-size: 3900px;
     }
-    .contenedor{
+    .contenedor {
         padding-left: 13%;
         padding-right: 13%;
     }
     .carousel__anterior,
     .carousel__siguiente {
-    width: 5px;
+        width: 5px;
     }
     .carousel {
         min-height: 0%;
@@ -437,26 +323,22 @@ body {
     .one-column h1 {
         font-size: 7vw;
     }
-    
     .one-column h2 {
         font-size: 5vw;
     }
-
     .one-column h3 {
-    font-size: 4vw;
+        font-size: 4vw;
     }
-
     .one-column p {
-    font-size: 3vw;
-}
-    .two-column{
+        font-size: 3vw;
+    }
+    .two-column {
         width: 100%;
     }
     .two-column h2 {
         font-size: 4vw;
         color: #2196f3;
     }
-    
     .two-column p {
         font-size: 3vw;
         color: white;

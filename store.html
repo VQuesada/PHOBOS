@@ -12,7 +12,7 @@
 
     <!--CSS Estilos-->
     <link rel="stylesheet" type="text/css" href="css/store.css">
-
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
     <!--
     Los estilos externos son definidos con la etiqueta <link>,
     dentro de la sección <head> de la página HTML:
@@ -24,45 +24,50 @@
 
 <body>
     <!--BARRA DE NAVEGACION-->
-    <ul id="nav">
-        <li>
-           <img src="img/LOGO1.png" alt="logo">
-        </li>
-        <li>
-            <a class="active" href="index1.html">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span> HOME
-            </a>
-        </li>
+    <nav>
+        <div id="nav" class="one-column-nav">
+            <div class="imagen-nav">
+                <img src="/PHOBOS/img/LOGO1.png" alt="LOGO1">
+            </div>
+            <div class="botones-nav">
+                <ul>
+                    <li>
+                        <a class="active" href="index1.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span> HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="store.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span> STORE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index3.html"> <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span> NEWS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index4.html"> <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span> FORUM
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <li>
-            <a href="store.html">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span> STORE
-            </a>
-        </li>
-        <li>
-            <a href="#section-2"> <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span> NEWS
-            </a>
-        </li>
-        <li>
-            <a href="#section-3"> <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span> FORUM
-            </a>
-        </li>
-
-    </ul>
     <!-- FIN   BARRA DE NAVEGACION-->
 
     <!--Header-->
@@ -157,8 +162,8 @@
 
     <!--Glider.js-->
     <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
-	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
-	<script src="js/store.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+    <script src="js/store.js"></script>
 </body>
 
 
