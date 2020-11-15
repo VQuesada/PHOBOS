@@ -46,10 +46,13 @@ li {
     list-style-type: none;
 }
 
-li img{
+li a img{
     width: 25%;
 }
 
+li a img{
+    padding: 0;
+}
 
 li a {
     position: relative;
@@ -66,7 +69,7 @@ li a {
     transition: 0.2s;
 }
 
-li a:hover {
+li a:hover:not(.logo) {
     color: rgb(199, 198, 198);
     background: #051e33;
     box-shadow: 0 0 10px #051e33, 0 0 40px #051e33, 0 0 80px;
