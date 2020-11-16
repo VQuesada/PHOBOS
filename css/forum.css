@@ -1,0 +1,293 @@
+* {
+    box-sizing: border-box;
+    /* font family */
+    font-family: Tahoma, Geneva, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.clear {
+    clear: both;
+}
+
+
+/*BARRA NAV*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: 0.4s;
+    display: inline-block;
+    list-style-type: none;
+}
+
+li {
+    float: left;
+    width: 25%;
+    display: inline-block;
+    list-style-type: none;
+}
+
+li a {
+    position: relative;
+    display: block;
+    padding: 1.75vh 2vh;
+    color: #2196f3;
+    background-color: #031321;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1vh;
+    text-decoration: none;
+    font-size: 1.25vw;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+li a:hover {
+    color: rgb(199, 198, 198);
+    background: #051e33;
+    box-shadow: 0 0 10px #051e33, 0 0 40px #051e33, 0 0 80px;
+    transition delay: 1s;
+}
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+/*FI BARRRA NAV*/
+
+
+/*Columnas*/
+
+.one-column {
+    float: left;
+    width: 100%;
+    padding: 2% 5% 3% 5%;
+}
+
+
+/*FIN Columnas*/
+
+.header {
+    background-image: url('../img/header_patron.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+    padding: 5% 2%;
+    text-align: center;
+}
+
+
+/**/
+
+.slide-toggle {
+    display: none;
+}
+
+.slidemenu {
+    max-width: 600px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.slidemenu label {
+    width: 25%;
+    text-align: center;
+    display: block;
+    float: left;
+    color: white;
+    opacity: 0.2;
+}
+
+.slidemenu label:hover {
+    cursor: pointer;
+    color: white;
+}
+
+.slidemenu label span {
+    display: block;
+    padding: 10px;
+}
+
+.slidemenu label .icon {
+    font-size: 20px;
+    border: solid 2px white;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+
+/*Bar Style*/
+
+.slider {
+    width: 100%;
+    height: 5px;
+    display: block;
+    background: #ccc;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.slider .bar {
+    width: 25%;
+    height: 5px;
+    background: rgb(77, 35, 182);
+    border-radius: 5px;
+}
+
+
+/*Animations*/
+
+.slidemenu label,
+.slider .bar {
+    transition: all 500ms ease-in-out;
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+}
+
+
+/*Toggle*/
+
+.slidemenu .slide-toggle:checked+label {
+    opacity: 1;
+}
+
+.slidemenu #slide-item-1:checked~.slider .bar {
+    margin-left: 0;
+}
+
+.slidemenu #slide-item-2:checked~.slider .bar {
+    margin-left: 25%;
+}
+
+.slidemenu #slide-item-3:checked~.slider .bar {
+    margin-left: 50%;
+}
+
+.slidemenu #slide-item-4:checked~.slider .bar {
+    margin-left: 75%;
+}
+
+
+/*Menu*/
+
+.tabcontent {
+    display: none;
+    padding: 2% 10%;
+    border-bottom: 1px solid #ccc;
+    border-top: none;
+}
+
+
+/**/
+
+.path {
+    stroke-dasharray: 500;
+    stroke-dashoffset: 1000;
+    animation: dash 4s linear alternate infinite;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 822;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/*IDs*/
+
+#section_1 {
+    margin-bottom: -50px;
+}
+
+.a {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    position: fixed;
+    position: absolute;
+}

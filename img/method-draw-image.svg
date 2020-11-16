@@ -1,0 +1,15 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+ <!-- Created with Method Draw - http://github.com/duopixel/Method-Draw/ -->
+ <g>
+  <title>background</title>
+  <rect fill="#fff" id="canvas_background" height="602" width="802" y="-1" x="-1"/>
+  <g display="none" overflow="visible" y="0" x="0" height="100%" width="100%" id="canvasGrid">
+   <rect fill="url(#gridpattern)" stroke-width="0" y="0" x="0" height="100%" width="100%"/>
+  </g>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <path id="svg_4" d="m291.94253,268.72383l66.46256,0l20.53744,-59.58686l20.53745,59.58686l66.46255,0l-53.76924,36.82628l20.5385,59.58686l-53.76926,-36.82729l-53.76925,36.82729l20.53851,-59.58686l-53.76926,-36.82628z" fill-opacity="null" stroke-opacity="null" stroke-width="0" stroke="#000" fill="#000000"/>
+  <text font-style="normal" font-weight="bold" stroke="#000" transform="matrix(0.8894433975219727,0,0,0.8864577412605285,43.28041537106037,42.97278915718198) " xml:space="preserve" text-anchor="start" font-family="Helvetica, Arial, sans-serif" font-size="24" id="svg_1" y="286.10871" x="333.32984" stroke-width="0" fill="#84D3DB">Phobos</text>
+ </g>
+</svg>
