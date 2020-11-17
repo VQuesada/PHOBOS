@@ -1,0 +1,156 @@
+body {
+    margin: 0%;
+    color: white;
+}
+
+
+/*BARRA NAV*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {}
+
+ul {
+    z-index: 10;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: fixed;
+    width: 90%;
+    top: 0;
+    transition: 0.4s;
+    display: inline-block;
+    list-style-type: none;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 0;
+}
+
+li {
+    float: left;
+    width: 20%;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.imagen-nav {
+    width: 10%;
+    padding: 0.6vw;
+}
+
+.imagen-nav img {
+    width: 5vw;
+}
+
+.botones-nav {
+    width: 90%;
+    float: right;
+}
+
+.one-column-nav {
+    width: 100%;
+    z-index: 10;
+}
+
+#nav {
+    background-color: #031321;
+    position: fixed;
+    float: left;
+}
+
+
+/*
+li img {
+    width: 25%;
+    image-resolution: ;
+}
+*/
+
+li a {
+    position: relative;
+    display: block;
+    padding: 1.5vw;
+    color: #2196f3;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1vh;
+    text-decoration: none;
+    font-size: 1.25vw;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+li a:hover {
+    color: rgb(199, 198, 198);
+    background: #051e33;
+    box-shadow: 0 0 1vh #051e33, 0 0 4vh #051e33, 0 0 8vh #051e33, 0 0 8vh;
+    transition delay: 1s;
+}
+
+a span {
+    position: absolute;
+    display: block;
+}
+
+a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(1) {
+    left: 100%;
+    transition: 1s;
+}
+
+a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(2) {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+a span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(3) {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+a span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(4) {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+/*FI BARRRA NAV*/
