@@ -140,6 +140,24 @@ dentro de la sección <head> de la página HTML:
             <p><a href="#">¿Como ir al subforo de juegos?</a></p>
         </div>
     </div>
+
+    <script>
+        //Funcion para cambiar el contenido debajo del header
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        //Prueba
+    </script>
     <!--FOOTER-->
     <div class="row" id="footer">
         <div class="four-column">
@@ -161,23 +179,6 @@ dentro de la sección <head> de la página HTML:
             <img src="img/disponible-ios.png" alt="iOS">
         </div>
     </div>
-    <script>
-        //Funcion para cambiar el contenido debajo del header
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-        //Prueba
-    </script>
 
 
 </body>
