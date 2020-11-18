@@ -154,3 +154,7 @@ body {
 .four-column img {
     width: 70%;
 }
+
+#footer {
+    background-color: rgb(70, 68, 68);
+}

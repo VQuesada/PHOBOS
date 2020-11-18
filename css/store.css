@@ -371,6 +371,10 @@
     #fallshel p {
         color: black;
     }
+    
+    #footer {
+        background-color: rgb(70, 68, 68);
+    }
     /*#fallshel p {
         color: black;
     }*/
