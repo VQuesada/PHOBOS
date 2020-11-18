@@ -115,3 +115,24 @@ body {
 #one-column-section1 {
     float: right;
 }
+
+#footer {
+    background-color: black;
+    width: 100%;
+    float: left;
+}
+
+.texto-footer {
+    width: 90vw;
+    float: left;
+    font-size: 1vh;
+}
+
+.imagen-footer {
+    width: 10vw;
+    float: left;
+}
+
+#logo {
+    width: 100%;
+}
