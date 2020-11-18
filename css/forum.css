@@ -6,7 +6,7 @@
 
 body {
     margin: 0;
-    background-color: black;
+    background-color: #031321;
     color: white;
 }
 
@@ -138,20 +138,44 @@ a:hover span:nth-child(4) {
 .one-column {
     float: left;
     width: 100%;
-    padding: 2% 5% 3% 5%;
+    padding: 4% 15%;
 }
 
-
-/*FIN Columnas*/
+.items_foro a {
+    float: left;
+    width: 100%;
+    padding: 1.5% 4%;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(150deg, #0027B5, #021B75, #02124C);
+    color: #ccc;
+    border: 2px solid black;
+    text-decoration: none;
+    transition: width 1s, background 1s;
+    border-radius: 5px;
+}
 
 .header {
-    background-image: url('../img/header_patron.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: left;
+    background: linear-gradient(150deg, #0027B5, #021B75, #02124C);
+    background-size: 400% 300%;
+    animation: BgGradient 5s ease infinite;
     padding: 5% 2%;
-    text-align: center;
 }
+
+@keyframes BgGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+
+/*FIN Columnas background-image: url('../img/header_patron.jpg');*/
 
 
 /**/
@@ -187,7 +211,7 @@ a:hover span:nth-child(4) {
 
 .slidemenu label .icon {
     font-size: 20px;
-    border: solid 2px white;
+    border: solid 2px blue;
     text-align: center;
     height: 50px;
     width: 50px;
@@ -282,12 +306,4 @@ a:hover span:nth-child(4) {
 
 #section_1 {
     margin-bottom: -50px;
-}
-
-.a {
-    width: 50px;
-    height: 50px;
-    background-color: black;
-    position: fixed;
-    position: absolute;
 }
