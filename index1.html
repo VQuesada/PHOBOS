@@ -5,55 +5,128 @@
     <title>PHOBOS</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
     <link rel="stylesheet" type="text/css" href="css/home.css">
 
 
 </head>
 
 
-
 <body>
     <!--BARRA DE NAVEGACION-->
-    <ul id="nav">
-        <li>
-            <a class="active" href="#header">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span> HOME
-            </a>
-        </li>
-
-        <li>
-            <a href="#section-1">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span> STORE
-            </a>
-        </li>
-        <li>
-            <a href="#section-2"> <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span> NEWS
-            </a>
-        </li>
-        <li>
-            <a href="#section-3"> <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span> FORUM
-            </a>
-        </li>
-
-    </ul>
+    <nav>
+        <div id="nav" class="one-column-nav">
+            <div class="imagen-nav">
+                <img src="img/LOGO1.png" alt="LOGO1">
+            </div>
+            <div class="botones-nav">
+                <ul>
+                    <li>
+                        <a class="active" href="index1.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span> HOME
+                        </a>
+                    </li>
+                    <li>
+                        <a href="store.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span> STORE
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index3.html"> <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span> NEWS
+                        </a>
+                    </li>
+                    <li>
+                        <a href="index4.html"> <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span> FORUM
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!--BARRA DE NAVEGACION-->
 
+    <!--PRIMERA SECCION-->
+
+    <div id="videowrapper">
+        <div id="fullScreenDiv">
+            <video id="video1" autoplay muted loop>
+                <source src="video/fondo1.mp4" type="video/mp4">
+                </video>
+            <div id="TextoVideo">
+                <h1> PHOBOS </h1>
+                <span>Bienvenido al futuro de los videojuegos</span>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="one-column-section1" { class="one-column">
+            <div class="two-column">
+                <p id="section-1">La herramienta de mobile gaming definitiva se llama PHOBOS</p>
+            </div>
+            <div class="two-column">
+                <img src="img/7_7926_phobos_anaglyph_m.png" alt="PHOBOS">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div id="one-column-section1" { class="one-column">
+
+            <div class="two-column">
+                <img src="img/7_7926_phobos_anaglyph_m.png" alt="PHOBOS">
+            </div>
+            <div class="two-column">
+                <p id="section-1">Disponible en Android e IOS</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div id="one-column-section1" { class="one-column">
+            <div class="two-column">
+                <p id="section-1">El diseño limpio como filosofia</p>
+            </div>
+            <div class="two-column">
+                <img src="img/7_7926_phobos_anaglyph_m.png" alt="PHOBOS">
+            </div>
+        </div>
+    </div>
 
 
 
+    <!-- FOOTER-->
+    <div class="row" id="footer">
+        <div class="imagen-footer">
+            <img id="logo" src="img/LOGO.png" alt="LOGO1">
+        </div>
+        <div class="texto-footer">
+            <div class="two-column">
+                <h3>Product</h3>
+                <p>Features</p>
+
+
+            </div>
+            <div class="two-column">
+                <h3>Platform</h3>
+                <p>Developer API</p>
+            </div>
+
+        </div>
+    </div>
 </body>
+
+</html>

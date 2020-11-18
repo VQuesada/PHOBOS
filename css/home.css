@@ -1,12 +1,16 @@
 * {
     box-sizing: border-box;
-    /* font family */
+    /* font */
     font-family: Tahoma, Geneva, sans-serif;
 }
 
 body {
-    margin: 0;
+    margin: 0%;
+    color: white;
 }
+
+
+/* Clear floats after the columns */
 
 .row:after {
     content: "";
@@ -14,114 +18,121 @@ body {
     clear: both;
 }
 
-
-/*BARRA NAV*/
-
-html {
-    scroll-behavior: smooth;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    transition: 0.4s;
-    display: inline-block;
-    list-style-type: none;
-}
-
-li {
-    float: left;
-    width: 25%;
-    display: inline-block;
-    list-style-type: none;
-}
-
-li a {
-    position: relative;
-    display: block;
-    padding: 1.75vh 2vh;
-    color: #2196f3;
+body {
     background-color: #031321;
-    text-transform: uppercase;
-    text-align: center;
-    letter-spacing: 1vh;
-    text-decoration: none;
-    font-size: 1.25vw;
-    overflow: hidden;
-    transition: 0.2s;
 }
 
-li a:hover {
-    color: rgb(199, 198, 198);
-    background: #051e33;
-    box-shadow: 0 0 10px #051e33, 0 0 40px #051e33, 0 0 80px;
-    transition delay: 1s;
-}
 
-a span {
+/*    VIDEO   */
+
+#TextoVideo {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    display: block;
-}
-
-a span:nth-child(1) {
     top: 0;
-    left: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(90deg, transparent, #2196f3);
-}
-
-a:hover span:nth-child(1) {
-    left: 100%;
-    transition: 1s;
-}
-
-a span:nth-child(2) {
-    top: -100%;
-    right: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #2196f3);
-}
-
-a:hover span:nth-child(2) {
-    top: 100%;
-    transition: 1s;
-    transition-delay: 0.25s;
-}
-
-a span:nth-child(3) {
-    bottom: 0;
-    right: -100%;
-    width: 100%;
-    height: 2px;
-    background: linear-gradient(270deg, transparent, #2196f3);
-}
-
-a:hover span:nth-child(3) {
-    right: 100%;
-    transition: 1s;
-    transition-delay: 0.5s;
-}
-
-a span:nth-child(4) {
-    bottom: -100%;
     left: 0;
-    width: 2px;
-    height: 100%;
-    background: linear-gradient(360deg, transparent, #2196f3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2vw;
 }
 
-a:hover span:nth-child(4) {
-    bottom: 100%;
-    transition: 1s;
-    transition-delay: 0.75s;
+#videowrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+#fullScreenDiv {
+    min-height: 100%;
+    height: 100vh;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    position: relative;
+}
+
+#video1 {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: block;
+    z-index: -999;
+}
+
+@media screen and (max-width:800px) {
+    #video1 {
+        visibility: hidden;
+        display: none;
+    }
 }
 
 
-/*FI BARRRA NAV*/
+/*    VIDEO   */
+
+.header {
+    background- background-size: cover;
+    background-attachment: fixed;
+    background-position: left;
+    background: rgba(0, 0, 0, 0.0);
+    padding: 5% 2%;
+    color: white;
+    text-align: center;
+}
+
+.one-column {
+    width: 100%;
+    float: left;
+    padding: 2.5% 1%;
+}
+
+.two-column {
+    width: 50%;
+    float: left;
+}
+
+.two-column img {
+    width: 75%;
+}
+
+.three-column {
+    width: 33.33%;
+    float: left;
+}
+
+.four-column {
+    width: 25%;
+    float: left;
+}
+
+#section-1 {
+    text-align: right;
+    padding-right: 4%;
+    font-size: 2vw;
+}
+
+#one-column-section1 {
+    float: right;
+}
+
+#footer {
+    background-color: black;
+    width: 100%;
+    float: left;
+}
+
+.texto-footer {
+    width: 90vw;
+    float: left;
+    font-size: 1vh;
+}
+
+.imagen-footer {
+    width: 10vw;
+    float: left;
+}
+
+#logo {
+    width: 100%;
+}
