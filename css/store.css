@@ -56,6 +56,7 @@
     .header {
         padding: 10% 2%;
         text-align: center;
+        animation: BgGradient 5s infinite;
     }
     
     .fondo-patron {
@@ -209,11 +210,15 @@
         float: left;
         width: 25%;
         padding: 2%;
-        text-align: center;
+        text-align: left;
+    }
+    
+    .four-column h5 {
+        text-decoration: underline;
     }
     
     .four-column img {
-        width: 100%;
+        width: 60%;
     }
     /*Styles videos*/
     
@@ -251,6 +256,14 @@
     
     .maspadding4 {
         padding-top: 9%;
+    }
+    
+    .maspadding5 {
+        padding-top: 12%;
+    }
+    
+    .maspadding6 {
+        padding-top: 7%;
     }
     
     .nopadding {
@@ -341,7 +354,7 @@
     }
     
     #pubg p {
-        color: black;
+        color: rgb(194, 126, 0);
     }
     
     #fallshel {
@@ -357,6 +370,10 @@
     
     #fallshel p {
         color: black;
+    }
+    
+    #footer {
+        background-color: rgb(70, 68, 68);
     }
     /*#fallshel p {
         color: black;
