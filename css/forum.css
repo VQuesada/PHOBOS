@@ -141,6 +141,24 @@ a:hover span:nth-child(4) {
     padding: 4% 15%;
 }
 
+
+/*Styles Four-column FOOTER*/
+
+.four-column {
+    float: left;
+    width: 25%;
+    padding: 2%;
+    text-align: left;
+}
+
+.four-column h5 {
+    text-decoration: underline;
+}
+
+.four-column img {
+    width: 70%;
+}
+
 .items_foro a {
     float: left;
     width: 100%;
