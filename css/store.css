@@ -25,6 +25,26 @@
         font-family: "Horror";
         src: url('../font/horror.ttf')
     }
+    
+    @font-face {
+        font-family: "Asphalt";
+        src: url('../font/asphalt.ttf');
+    }
+    
+    @font-face {
+        font-family: "AmongUS";
+        src: url('../font/In your face, joffrey!.ttf');
+    }
+    
+    @font-face {
+        font-family: "PUBG";
+        src: url('../font/PUBG.ttf');
+    }
+    
+    @font-face {
+        font-family: "Fallout";
+        src: url('../font/Fallout.ttf')
+    }
     /*Style body*/
     
     body {
@@ -274,12 +294,24 @@
         background-color: rgb(61, 58, 58);
     }
     
+    #al9 h1 {
+        font-family: "Asphalt";
+        font-weight: lighter;
+        color: white;
+    }
+    
     #al9 .two-column p {
         padding-top: 0;
     }
     
     #amus {
         background-color: white;
+    }
+    
+    #amus h1 {
+        font-family: "AmongUs";
+        font-size: 6vw;
+        color: black;
     }
     
     #amus p {
@@ -290,12 +322,22 @@
         background-color: rgb(130, 247, 255);
     }
     
+    #lol h1 {
+        color: rgb(250, 182, 54);
+    }
+    
     #lol p {
         color: black;
     }
     
     #pubg {
-        background-color: rgb(194, 126, 0);
+        background-color: black;
+    }
+    
+    #pubg h1 {
+        font-family: "PUBG";
+        color: rgb(194, 126, 0);
+        font-size: 5vw;
     }
     
     #pubg p {
@@ -303,8 +345,18 @@
     }
     
     #fallshel {
-        background-color: rgb(27, 155, 27);
+        /*background-color: rgb(27, 155, 27);*/
         /*background-image: url('../img/fallshel_fondo.jpg');*/
+        background-color: rgb(244, 209, 96);
+    }
+    
+    #fallshel h1 {
+        font-family: "Fallout";
+        font-size: 4vw;
+    }
+    
+    #fallshel p {
+        color: black;
     }
     /*#fallshel p {
         color: black;
