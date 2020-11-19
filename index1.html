@@ -123,8 +123,36 @@
     </div>
 
 
+    <div class="oscurecer" id="oscurecer">
+        <div class="login" id="login">
+            <a href="#" id="cerrarlogin" class="cerrarlogin"><i class="fad fa-times-circle"></i></a>
+            <h3>Inicia Sesión</h3>
+            <h4>y personaliza tu perfil</h4>
+            <form action="">
+                <div class="registro-input">
+                    <input type="text" placeholder="Nombre">
+                    <input type="email" placeholder="Correo">
+                </div>
+                <input type="submit" class="iniciar-sesion" value="Iniciar Sesion">
+            </form>
+        </div>
+    </div>
+    <script>
+        // Login al cargar la pagina
+        window.onload = function() {
+            oscurecer.classList.add('active');
+            login.classList.add('active');
 
+            cerrarlogin.addEventListener('click', function() {
+                oscurecer.classList.remove('active')
+                login.classList.remove('active')
+            });
+        };
 
+        //Fin Login
+    </script>
+    <!--Icono del login-->
+    <script src="js/iconos.js"></script>
 
 </body>
 
