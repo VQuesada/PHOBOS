@@ -115,6 +115,9 @@
         .borrar-seccion {
             display: none;
         }
+        #section-5 {
+            background-image: url('../img/header_patron.jpg');
+        }
     }
     /*    VIDEO   */
     
@@ -139,6 +142,16 @@
         background-attachment: fixed;
         background-position: left;
         background-image: url('../img/header_patron.jpg');
+        padding: 5% 2%;
+        color: white;
+        text-align: center;
+    }
+    
+    #section-5 {
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: left;
+        background-image: url('../img/header_patron.girado.jpg');
         padding: 5% 2%;
         color: white;
         text-align: center;
