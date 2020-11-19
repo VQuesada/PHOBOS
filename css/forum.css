@@ -307,3 +307,165 @@ a:hover span:nth-child(4) {
 #section_1 {
     margin-bottom: -50px;
 }
+
+
+/*--------------*/
+
+
+/*Ventana Login*/
+
+
+/*------------*/
+
+.oscurecer {
+    background: rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+}
+
+.oscurecer.active {
+    visibility: visible;
+}
+
+.login {
+    background: white;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 3px;
+    padding: 20px;
+    text-align: center;
+    width: 400px;
+    color: black;
+    transition: 0.3s ease all;
+    transform: scale(0.7);
+    opacity: 0;
+}
+
+.login .cerrarlogin {
+    font-size: 16px;
+    line-height: 16px;
+    display: block;
+    text-align: right;
+    color: #bbbbbb;
+    transition: .3s ease all;
+}
+
+.login .cerrarlogin:hover {
+    color: #000;
+}
+
+.login h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    opacity: 0;
+}
+
+.login h4 {
+    font-size: 26px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    opacity: 0;
+}
+
+.login form .registro-input {
+    opacity: 0;
+}
+
+.login form .registro-input input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 52px;
+    line-height: 52px;
+    font-size: 18px;
+    text-align: center;
+    border: 1px solid #bbbbbb;
+}
+
+.login form .iniciar-sesion {
+    padding: 0 20px;
+    height: 40px;
+    line-height: 20px;
+    border: none;
+    color: #fff;
+    background: #2196f3;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: .3s ease all;
+    opacity: 0;
+}
+
+.login form .iniciar-sesion:hover {
+    background: rgba(94, 125, 227, .9);
+}
+
+
+/*animacion login*/
+
+.login.active {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.login.active h3 {
+    animation: entradatitulo 1s ease .4s forwards;
+}
+
+.login.active h4 {
+    animation: entradasubtitulo 1s ease .4s forwards;
+}
+
+.login.active .registro-input {
+    animation: entradainput 1s ease 1s forwards;
+}
+
+.login.active .iniciar-sesion {
+    animation: entradalogin 1s ease 1s forwards;
+}
+
+@keyframes entradatitulo {
+    from {
+        transform: translateY(-25px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradasubtitulo {
+    from {
+        transform: translateY(25px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes entradainput {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes entradalogin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
