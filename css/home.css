@@ -1,4 +1,4 @@
-    * {
+* {
         box-sizing: border-box;
         /* font */
         font-family: Tahoma, Geneva, sans-serif;
@@ -373,15 +373,17 @@
         #logofoot {
             padding-top: 7%;
         }
-        @media screen and (max-width:400px) {
-            #disponible {
-                padding-top: 25%;
-                padding-left: 10%;
-                padding-right: 0;
-            }
-            #logofoot {
-                padding-top: 17%;
-            }
-        }
-        /*---------*/
     }
+    
+    @media screen and (max-width:400px) {
+        #disponible {
+            padding-top: 25%;
+            padding-left: 10%;
+            padding-right: 0;
+        }
+        #logofoot {
+            padding-top: 17%;
+        }
+    }
+    /*---------*/
+}
