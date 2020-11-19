@@ -115,9 +115,6 @@
         .borrar-seccion {
             display: none;
         }
-        #canviar-fondo {
-            background-image: url('../img/header_patron.jpg');
-        }
     }
     /*    VIDEO   */
     
@@ -130,7 +127,7 @@
     .two-column {
         width: 50%;
         float: left;
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
     
     .two-column img {

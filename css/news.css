@@ -64,7 +64,7 @@ body {
 /*-------------------*/
 
 .paddingnews {
-    padding-bottom: 750px;
+    padding-bottom: 800px;
 }
 
 
@@ -177,4 +177,8 @@ img {
     #fullScreenDiv {
         height: 20vh;
     }
+    .slider {
+        display: none;
+    }
+    #
 }
