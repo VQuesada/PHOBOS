@@ -163,6 +163,37 @@
         text-align: center;
     }
     
+    #section-3 img {
+        width: 70%;
+    }
+    
+    #footer {
+        background-color: rgb(70, 68, 68);
+    }
+    
+    .four-column {
+        float: left;
+        width: 25%;
+        padding: 2%;
+        text-align: left;
+    }
+    
+    .four-column h5 {
+        text-decoration: underline;
+    }
+    
+    .four-column img {
+        width: 60%;
+    }
+    
+    .maspadding {
+        padding-top: 14%;
+    }
+    
+    .maspadding2 {
+        padding-top: 4%;
+    }
+    
     @media screen and (max-width:700px) {
         .two-column {
             width: 100%;
