@@ -492,16 +492,6 @@
         .four-column {
             width: 50%;
         }
-        /*FOOTER*/
-        #disponible {
-            padding-top: 14%;
-            padding-left: 10%;
-            padding-right: 0;
-        }
-        #logofoot {
-            padding-top: 7%;
-        }
-        /*---------*/
         #dt2 p {
             font-size: 3vw;
         }
@@ -519,6 +509,15 @@
         }
         #fallshel h1 {
             font-size: 8vw;
+        }
+        /*FOOTER*/
+        #disponible {
+            padding-top: 14%;
+            padding-left: 10%;
+            padding-right: 0;
+        }
+        #logofoot {
+            padding-top: 7%;
         }
         @media screen and (max-width:400px) {
             #disponible {
