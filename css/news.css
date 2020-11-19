@@ -64,7 +64,7 @@ body {
 /*-------------------*/
 
 .paddingnews {
-    padding-bottom: 700px;
+    padding-bottom: 750px;
 }
 
 
@@ -85,8 +85,9 @@ input[type=radio] {
 }
 
 .slider {
-    width: 60%;
-    max-width: 50%;
+    padding-left: 300px;
+    width: 100%;
+    max-width: 80%;
     max-height: 80%;
     height: 60%;
     transform-style: preserve-3d;
