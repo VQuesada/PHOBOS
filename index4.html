@@ -123,18 +123,20 @@ dentro de la sección <head> de la página HTML:
             <p>En el caso de cualquier error del foro podeis enviar un email al siguiente correo: helps.phobos@gmail.com</p>
         </div>
     </div>
-    <div class="one-column">
-        <div class="items_foro prueba">
-            <p><a href="#"><i class="fas fa-thumbtack"></i> Publicación de hilos de intercambio</a></p>
-        </div>
-        <div class="items_foro prueba" onmouseover="console.log('Acabas de pasar por encima');">
-            <p><a href="#"><i class="fas fa-thumbtack"></i> Normas y Guias del foro</a></p>
-        </div>
-        <div class="items_foro prueba">
-            <p><a href="#"><i class="far fa-comment-alt"></i> Recuperar cuenta</a></p>
-        </div>
-        <div class="items_foro prueba">
-            <p><a href="#"><i class="far fa-comment-alt"></i> ¿Como ir al subforo de juegos?</a></p>
+    <div class="row">
+        <div class="one-column">
+            <div class="items_foro prueba">
+                <p><a href="#"><i class="fas fa-thumbtack"></i> Publicación de hilos de intercambio</a></p>
+            </div>
+            <div class="items_foro prueba" onmouseover="console.log('Acabas de pasar por encima');">
+                <p><a href="#"><i class="fas fa-thumbtack"></i> Normas y Guias del foro</a></p>
+            </div>
+            <div class="items_foro prueba">
+                <p><a href="#"><i class="far fa-comment-alt"></i> Recuperar cuenta</a></p>
+            </div>
+            <div class="items_foro prueba">
+                <p><a href="#"><i class="far fa-comment-alt"></i> ¿Como ir al subforo de juegos?</a></p>
+            </div>
         </div>
     </div>
 
@@ -152,6 +154,7 @@ dentro de la sección <head> de la página HTML:
             </form>
         </div>
     </div>
+
 
 
     <script>
@@ -187,6 +190,14 @@ dentro de la sección <head> de la página HTML:
     </script>
     <!--Icono del login-->
     <script src="js/iconos.js"></script>
+
+
+
+
+
+    </script>
+    <!--Icono del login-->
+    <script src="js/iconos.js"></script>
     <!--FOOTER-->
     <div class="row" id="footer">
         <div class="four-column" id="logofoot">
@@ -208,7 +219,26 @@ dentro de la sección <head> de la página HTML:
             <img src="img/disponible-ios.png" alt="iOS">
         </div>
     </div>
-
+    <script>
+        //Funcion para cambiar el contenido debajo del header function openCity(evt, cityName) { var i, tabcontent, tablinks; tabcontent = document.getElementsByClassName("tabcontent"); for (i = 0; i
+        <
+        tabcontent.length;
+        i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = d ocument.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = t ablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+        } //Fin funcion de slider // Login al cargar la pagina window.onload=f unction() { oscurecer.classList.add( 'active'); login.classList.add( 'active'); cerrarlogin.addEventListener( 'click', function() { oscurecer.classList.remove(
+        'active') login.classList.remove('active')
+        });
+        }; >>> >>> > ed4fb2e313fd8b9e2be2fc2787fee011381e4d6c //Fin Login
+    </script>
+    <!--Icono del login-->
+    <script src="js/iconos.js"></script>
 
 </body>
 
