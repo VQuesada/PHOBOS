@@ -519,6 +519,11 @@
         #logofoot {
             padding-top: 7%;
         }
+        @media screen and (max-width:650px) {
+            li a {
+                font-size: 2vw;
+            }
+        }
         @media screen and (max-width:420px) {
             #disponible {
                 padding-top: 25%;

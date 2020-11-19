@@ -204,6 +204,15 @@ img {
     .paddingnews {
         display: none;
     }
+    li a {
+        font-size: 2.5vw;
+    }
+}
+
+@media screen and (max-width:650px) {
+    li a {
+        font-size: 2vw;
+    }
 }
 
 
