@@ -324,3 +324,16 @@
             opacity: 1;
         }
     }
+    /*FOOTER*/
+    
+    @media screen and (max-width:800px) {
+        #disponible {
+            padding-top: 14%;
+            padding-left: 10%;
+            padding-right: 0;
+        }
+        #logofoot {
+            padding-top: 7%;
+        }
+        /*---------*/
+    }
