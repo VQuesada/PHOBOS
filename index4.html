@@ -138,8 +138,7 @@ dentro de la sección <head> de la página HTML:
         </div>
     </div>
 
-<<<<<<< HEAD
-    <div class="oscurecer" id="oscurecer">
+    <<<<<<< HEAD <div class="oscurecer" id="oscurecer">
         <div class="login" id="login">
             <a href="#" id="cerrarlogin" class="cerrarlogin"><i class="fad fa-times-circle"></i></a>
             <h3>Inicia Sesión</h3>
@@ -152,67 +151,63 @@ dentro de la sección <head> de la página HTML:
                 <input type="submit" class="iniciar-sesion" value="Iniciar Sesion">
             </form>
         </div>
-    </div>
+        </div>
 
-=======
->>>>>>> 61bbe2e2ac7b7d3173b86b7fc4dd80b316c91401
-    <script>
-        //Funcion para cambiar el contenido debajo del header
-        function openCity(evt, cityName) {
-            var i, tabcontent, tablinks;
-            tabcontent = document.getElementsByClassName("tabcontent");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
+        ======= >>>>>>> 61bbe2e2ac7b7d3173b86b7fc4dd80b316c91401
+        <script>
+            //Funcion para cambiar el contenido debajo del header
+            function openCity(evt, cityName) {
+                var i, tabcontent, tablinks;
+                tabcontent = document.getElementsByClassName("tabcontent");
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablinks");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+                document.getElementById(cityName).style.display = "block";
+                evt.currentTarget.className += " active";
             }
-            tablinks = document.getElementsByClassName("tablinks");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            document.getElementById(cityName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
 
-        //Fin funcion de slider
+            //Fin funcion de slider
 
-        // Login al cargar la pagina
-        window.onload = function() {
-            oscurecer.classList.add('active');
-            login.classList.add('active');
+            // Login al cargar la pagina
+            window.onload = function() {
+                oscurecer.classList.add('active');
+                login.classList.add('active');
 
-            cerrarlogin.addEventListener('click', function() {
-                oscurecer.classList.remove('active')
-                login.classList.remove('active')
-            });
-        };
+                cerrarlogin.addEventListener('click', function() {
+                    oscurecer.classList.remove('active')
+                    login.classList.remove('active')
+                });
+            };
 
-        //Fin Login
-    </script>
-<<<<<<< HEAD
-    <!--Icono del login-->
-    <script src="js/iconos.js"></script>
-=======
-    <!--FOOTER-->
-    <div class="row" id="footer">
-        <div class="four-column">
-            <img src="img/LOGO1.png" alt="phobos">
+            //Fin Login
+        </script>
+        <!--Icono del login-->
+        <script src="js/iconos.js"></script>
+        <!--FOOTER-->
+        <div class="row" id="footer">
+            <div class="four-column">
+                <img src="img/LOGO1.png" alt="phobos">
+            </div>
+            <div class="four-column maspadding2">
+                <h5>Políticas de privacidad</h5>
+                <h5>Información legal</h5>
+                <h5>Acuerdo de suscriptor a PHOBOS</h5>
+                <h5>Ajustes de cookies</h5>
+            </div>
+            <div class="four-column maspadding2">
+                <h1>Tienes alguna duda?</h1>
+                <p>No dudes en contactar con nosotros</p>
+                <p>contact-info@phobos.com</p>
+            </div>
+            <div class="four-column">
+                <img src="img/android.png" alt="android">
+                <img src="img/disponible-ios.png" alt="iOS">
+            </div>
         </div>
-        <div class="four-column maspadding2">
-            <h5>Políticas de privacidad</h5>
-            <h5>Información legal</h5>
-            <h5>Acuerdo de suscriptor a PHOBOS</h5>
-            <h5>Ajustes de cookies</h5>
-        </div>
-        <div class="four-column maspadding2">
-            <h1>Tienes alguna duda?</h1>
-            <p>No dudes en contactar con nosotros</p>
-            <p>contact-info@phobos.com</p>
-        </div>
-        <div class="four-column">
-            <img src="img/android.png" alt="android">
-            <img src="img/disponible-ios.png" alt="iOS">
-        </div>
-    </div>
->>>>>>> 61bbe2e2ac7b7d3173b86b7fc4dd80b316c91401
 
 
 </body>
