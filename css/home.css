@@ -1,407 +1,395 @@
-* {
-    box-sizing: border-box;
-    /* font */
-    font-family: Tahoma, Geneva, sans-serif;
-}
-
-body {
-    margin: 0%;
-    color: white;
-}
-
-
-/* Clear floats after the columns */
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-body {
-    background-color: #031321;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-
-
-/*    VIDEO   */
-
-#TextoVideo {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 2vw;
-}
-
-#TextoVideo2 {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-size: 2vw;
-}
-
-#videowrapper {
-    position: relative;
-    overflow: hidden;
-}
-
-#fullScreenDiv {
-    min-height: 100%;
-    height: 100vh;
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    position: relative;
-}
-
-#fullScreenDiv2 {
-    min-height: 100%;
-    height: 100vh;
-    width: 100vw;
-    padding: 0;
-    margin: 0;
-    background-color: transparent;
-    position: relative;
-}
-
-#video1 {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    display: block;
-    z-index: -999;
-}
-
-#video2 {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    display: block;
-    z-index: -999;
-}
-
-@media screen and (max-width:1300px) {
-    #video1 {
-        display: none;
-    }
-    .poner-fondo {
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: left;
-        background-image: url('../img/fondo1_Moment_Moment.jpg');
-    }
-}
-
-@media screen and (max-width:1414px) {
-    #TextoVideo2 {
-        font-size: 3vw;
-        height: 180px;
-    }
-    #fullScreenDiv2 {
-        height: 20vh;
-    }
-    .borrar-seccion {
-        display: none;
-    }
-}
-
-
-/*    VIDEO   */
-
-.one-column {
-    width: 100%;
-    float: left;
-    padding: 2.5% 1%;
-}
-
-.two-column {
-    width: 50%;
-    float: left;
-    font-size: 2.3vh;
-}
-
-.two-column img {
-    width: 75%;
-}
-
-.two-column h1 {
-    padding-top: 11%;
-}
-
-#section-2 {
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: left;
-    background-image: url('../img/header_patron.jpg');
-    padding: 5% 2%;
-    color: white;
-    text-align: center;
-}
-
-#section-5 {
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: left;
-    background-image: url('../img/header_patron.girado.jpg');
-    padding: 5% 2%;
-    color: white;
-    text-align: center;
-}
-
-#section-3 {
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: left;
-    background: rgba(red, green, rgb(44, 2, 141), alpha) padding: 5% 2%;
-    color: white;
-    text-align: center;
-}
-
-#section-3 img {
-    width: 70%;
-}
-
-#footer {
-    background-color: rgb(70, 68, 68);
-}
-
-.four-column {
-    float: left;
-    width: 25%;
-    padding: 2%;
-    text-align: left;
-}
-
-.four-column h5 {
-    text-decoration: underline;
-}
-
-.four-column img {
-    width: 60%;
-}
-
-.maspadding {
-    padding-top: 14%;
-}
-
-.maspadding2 {
-    padding-top: 4%;
-}
-
-@media screen and (max-width:700px) {
-    .two-column {
-        width: 100%;
-    }
-    .two-column h1 {
-        padding-top: 2%;
-    }
-}
-
-
-/*Ventana Login*/
-
-
-/*------------*/
-
-.oscurecer {
-    background: rgba(0, 0, 0, 0.3);
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-}
-
-.oscurecer.active {
-    visibility: visible;
-}
-
-.login {
-    background: white;
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-    border-radius: 3px;
-    padding: 20px;
-    text-align: center;
-    width: 400px;
-    color: black;
-    transition: 0.3s ease all;
-    transform: scale(0.7);
-    opacity: 0;
-}
-
-.login .cerrarlogin {
-    font-size: 16px;
-    line-height: 16px;
-    display: block;
-    text-align: right;
-    color: #bbbbbb;
-    transition: .3s ease all;
-}
-
-.login .cerrarlogin:hover {
-    color: #000;
-}
-
-.login h3 {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    opacity: 0;
-}
-
-.login h4 {
-    font-size: 26px;
-    font-weight: 300;
-    margin-bottom: 40px;
-    opacity: 0;
-}
-
-.login form .registro-input {
-    opacity: 0;
-}
-
-.login form .registro-input input {
-    width: 100%;
-    margin-bottom: 20px;
-    height: 52px;
-    line-height: 52px;
-    font-size: 18px;
-    text-align: center;
-    border: 1px solid #bbbbbb;
-}
-
-.login form .iniciar-sesion {
-    padding: 0 20px;
-    height: 40px;
-    line-height: 20px;
-    border: none;
-    color: #fff;
-    background: #2196f3;
-    border-radius: 3px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: .3s ease all;
-    opacity: 0;
-}
-
-.login form .iniciar-sesion:hover {
-    background: rgba(94, 125, 227, .9);
-}
-
-
-/*animacion login*/
-
-.login.active {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.login.active h3 {
-    animation: entradatitulo 1s ease .4s forwards;
-}
-
-.login.active h4 {
-    animation: entradasubtitulo 1s ease .4s forwards;
-}
-
-.login.active .registro-input {
-    animation: entradainput 1s ease 1s forwards;
-}
-
-.login.active .iniciar-sesion {
-    animation: entradalogin 1s ease 1s forwards;
-}
-
-@keyframes entradatitulo {
-    from {
-        transform: translateY(-25px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes entradasubtitulo {
-    from {
-        transform: translateY(25px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes entradainput {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes entradalogin {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-
-/*FOOTER*/
-
-@media screen and (max-width:800px) {
-    .four-column {
-        width: 50%;
-    }
-    #disponible {
-        padding-top: 14%;
-        padding-left: 10%;
-        padding-right: 0;
-    }
-    #logofoot {
-        padding-top: 7%;
-    }
-}
-
-@media screen and (max-width:420px) {
-    #disponible {
-        padding-top: 25%;
-        padding-left: 10%;
-        padding-right: 0;
-    }
-    #logofoot {
-        padding-top: 17%;
-    }
-}
-
-
-/*---------*/
-
-
-}
+                * {
+                box-sizing: border-box;
+                /* font */
+                font-family: Tahoma, Geneva, sans-serif;
+            }
+            
+            body {
+                margin: 0%;
+                color: white;
+            }
+            /* Clear floats after the columns */
+            
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            
+            body {
+                background-color: #031321;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+            }
+            /*    VIDEO   */
+            
+            #TextoVideo {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-size: 2vw;
+            }
+            
+            #TextoVideo2 {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-size: 2vw;
+            }
+            
+            #videowrapper {
+                position: relative;
+                overflow: hidden;
+            }
+            
+            #fullScreenDiv {
+                min-height: 100%;
+                height: 100vh;
+                width: 100vw;
+                padding: 0;
+                margin: 0;
+                background-color: transparent;
+                position: relative;
+            }
+            
+            #fullScreenDiv2 {
+                min-height: 100%;
+                height: 100vh;
+                width: 100vw;
+                padding: 0;
+                margin: 0;
+                background-color: transparent;
+                position: relative;
+            }
+            
+            #video1 {
+                width: 100%;
+                height: auto;
+                margin: auto;
+                display: block;
+                z-index: -999;
+            }
+            
+            #video2 {
+                width: 100%;
+                height: auto;
+                margin: auto;
+                display: block;
+                z-index: -999;
+            }
+            
+            @media screen and (max-width:1300px) {
+                #video1 {
+                    display: none;
+                }
+                .poner-fondo {
+                    background-size: cover;
+                    background-attachment: fixed;
+                    background-position: left;
+                    background-image: url('../img/fondo1_Moment_Moment.jpg');
+                }
+            }
+            
+            @media screen and (max-width:1414px) {
+                #TextoVideo2 {
+                    font-size: 4vw;
+                    height: 180px;
+                }
+                #TextoVideo {
+                    font-size: 4vw;
+                }
+                #fullScreenDiv2 {
+                    height: 20vh;
+                }
+                .borrar-seccion {
+                    display: none;
+                }
+            }
+            /*    VIDEO   */
+            
+            .one-column {
+                width: 100%;
+                float: left;
+                padding: 2.5% 1%;
+            }
+            
+            .two-column {
+                width: 50%;
+                float: left;
+                font-size: 2.3vh;
+            }
+            
+            .two-column img {
+                width: 75%;
+            }
+            
+            .two-column h1 {
+                padding-top: 11%;
+            }
+            
+            #section-2 {
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: left;
+                background-image: url('../img/header_patron.jpg');
+                padding: 5% 2%;
+                color: white;
+                text-align: center;
+            }
+            
+            #section-5 {
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: left;
+                background-image: url('../img/header_patron.girado.jpg');
+                padding: 5% 2%;
+                color: white;
+                text-align: center;
+            }
+            
+            #section-3 {
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: left;
+                background: rgba(red, green, rgb(44, 2, 141), alpha) padding: 5% 2%;
+                color: white;
+                text-align: center;
+            }
+            
+            #section-3 img {
+                width: 70%;
+            }
+            
+            #footer {
+                background-color: rgb(70, 68, 68);
+            }
+            
+            .four-column {
+                float: left;
+                width: 25%;
+                padding: 2%;
+                text-align: left;
+            }
+            
+            .four-column h5 {
+                text-decoration: underline;
+            }
+            
+            .four-column img {
+                width: 60%;
+            }
+            
+            .maspadding {
+                padding-top: 14%;
+            }
+            
+            .maspadding2 {
+                padding-top: 4%;
+            }
+            
+            @media screen and (max-width:700px) {
+                .two-column {
+                    width: 100%;
+                }
+                .two-column h1 {
+                    padding-top: 2%;
+                }
+            }
+            /*Ventana Login*/
+            /*------------*/
+            
+            .oscurecer {
+                background: rgba(0, 0, 0, 0.3);
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                visibility: hidden;
+            }
+            
+            .oscurecer.active {
+                visibility: visible;
+            }
+            
+            .login {
+                background: white;
+                box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+                border-radius: 3px;
+                padding: 20px;
+                text-align: center;
+                width: 400px;
+                color: black;
+                transition: 0.3s ease all;
+                transform: scale(0.7);
+                opacity: 0;
+            }
+            
+            .login .cerrarlogin {
+                font-size: 16px;
+                line-height: 16px;
+                display: block;
+                text-align: right;
+                color: #bbbbbb;
+                transition: .3s ease all;
+            }
+            
+            .login .cerrarlogin:hover {
+                color: #000;
+            }
+            
+            .login h3 {
+                font-size: 36px;
+                font-weight: 600;
+                margin-bottom: 10px;
+                opacity: 0;
+            }
+            
+            .login h4 {
+                font-size: 26px;
+                font-weight: 300;
+                margin-bottom: 40px;
+                opacity: 0;
+            }
+            
+            .login form .registro-input {
+                opacity: 0;
+            }
+            
+            .login form .registro-input input {
+                width: 100%;
+                margin-bottom: 20px;
+                height: 52px;
+                line-height: 52px;
+                font-size: 18px;
+                text-align: center;
+                border: 1px solid #bbbbbb;
+            }
+            
+            .login form .iniciar-sesion {
+                padding: 0 20px;
+                height: 40px;
+                line-height: 20px;
+                border: none;
+                color: #fff;
+                background: #2196f3;
+                border-radius: 3px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: .3s ease all;
+                opacity: 0;
+            }
+            
+            .login form .iniciar-sesion:hover {
+                background: rgba(94, 125, 227, .9);
+            }
+            /*animacion login*/
+            
+            .login.active {
+                opacity: 1;
+                transform: scale(1);
+            }
+            
+            .login.active h3 {
+                animation: entradatitulo 1s ease .4s forwards;
+            }
+            
+            .login.active h4 {
+                animation: entradasubtitulo 1s ease .4s forwards;
+            }
+            
+            .login.active .registro-input {
+                animation: entradainput 1s ease 1s forwards;
+            }
+            
+            .login.active .iniciar-sesion {
+                animation: entradalogin 1s ease 1s forwards;
+            }
+            
+            @keyframes entradatitulo {
+                from {
+                    transform: translateY(-25px);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            
+            @keyframes entradasubtitulo {
+                from {
+                    transform: translateY(25px);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
+            }
+            
+            @keyframes entradainput {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            
+            @keyframes entradalogin {
+                from {
+                    opacity: 0;
+                }
+                to {
+                    opacity: 1;
+                }
+            }
+            /*FOOTER*/
+            
+            @media screen and (max-width:800px) {
+                .four-column {
+                    width: 50%;
+                }
+                /*FOOTER*/
+                @media screen and (max-width:800px) {
+                    .four-column {
+                        width: 50%;
+                    }
+                    #disponible {
+                        padding-top: 14%;
+                        padding-left: 10%;
+                        padding-right: 0;
+                    }
+                    #logofoot {
+                        padding-top: 7%;
+                    }
+                    @media screen and (max-width:420px) {
+                        #disponible {
+                            padding-top: 25%;
+                            padding-left: 10%;
+                            padding-right: 0;
+                        }
+                        #logofoot {
+                            padding-top: 17%;
+                        }
+                    }
+                    /*---------*/
+                }
