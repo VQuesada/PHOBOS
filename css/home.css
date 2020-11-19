@@ -359,3 +359,29 @@
             opacity: 1;
         }
     }
+    /*FOOTER*/
+    
+    @media screen and (max-width:800px) {
+        .four-column {
+            width: 50%;
+        }
+        #disponible {
+            padding-top: 14%;
+            padding-left: 10%;
+            padding-right: 0;
+        }
+        #logofoot {
+            padding-top: 7%;
+        }
+        @media screen and (max-width:400px) {
+            #disponible {
+                padding-top: 25%;
+                padding-left: 10%;
+                padding-right: 0;
+            }
+            #logofoot {
+                padding-top: 17%;
+            }
+        }
+        /*---------*/
+    }

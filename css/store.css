@@ -489,4 +489,45 @@
             font-size: 3vw;
             color: white;
         }
+        .four-column {
+            width: 50%;
+        }
+        /*FOOTER*/
+        #disponible {
+            padding-top: 14%;
+            padding-left: 10%;
+            padding-right: 0;
+        }
+        #logofoot {
+            padding-top: 7%;
+        }
+        /*---------*/
+        #dt2 p {
+            font-size: 3vw;
+        }
+        .maspadding3 {
+            padding-top: 0%;
+        }
+        #dt2 h1 {
+            font-size: 8vw;
+        }
+        #amus h1 {
+            font-size: 12vw;
+        }
+        #pubg h1 {
+            font-size: 10vw;
+        }
+        #fallshel h1 {
+            font-size: 8vw;
+        }
+        @media screen and (max-width:400px) {
+            #disponible {
+                padding-top: 25%;
+                padding-left: 10%;
+                padding-right: 0;
+            }
+            #logofoot {
+                padding-top: 17%;
+            }
+        }
     }
